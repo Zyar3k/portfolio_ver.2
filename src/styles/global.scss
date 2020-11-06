@@ -1,3 +1,7 @@
+@import "./settings.scss";
+@import "./typography.scss";
+@import "./normalize.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +9,14 @@
 }
 
 body {
-  background: #3a3a3a;
-  color: white;
+  background: $color1;
+  color: $color2;
+}
+
+a {
+  color: $color3;
+}
+
+a:hover {
+  color: $color4;
 }
