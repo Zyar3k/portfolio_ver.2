@@ -1,7 +1,9 @@
+const { default: Navbar } = require("../../features/Navbar/Navbar");
+
 const Header = () => {
   return (
     <>
-      <h1>Header</h1>
+      <Navbar />
     </>
   );
 };
