@@ -12,30 +12,26 @@
 
 .navbarContainer {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 80px;
 
   .navbarLogo {
     color: #fff;
-    justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 32px;
     display: flex;
-    align-items: center;
   }
 
   .navMenu {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
     list-style: none;
     text-align: center;
-    width: 80vw;
-    justify-content: end;
-    margin-right: 32px;
 
     .navItem {
       height: 80px;

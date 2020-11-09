@@ -17,7 +17,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbarContainer'>
           <NavLink to='/' className='navbarLogo'>
-            ZYGAN AREK
+            <p>ZYGAN AREK</p>
           </NavLink>
           <div className='menuIcon' onClick={handleClick}>
             <FontAwesomeIcon icon={click ? faTimes : faBars} />
