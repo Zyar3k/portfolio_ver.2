@@ -3,7 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 
 import img1 from "../../../images/bcd.png";
 import img2 from "../../../images/czatap_port.png";
@@ -19,7 +20,144 @@ import img11 from "../../../images/new_wave.png";
 
 import "./Carousel.scss";
 
+const portfolioDB = {
+  title: "portfolio",
+  projects: [
+    {
+      name: "picture shop",
+      img: img6,
+      code: "https://github.com/Zyar3k/picture_shop",
+      demo: "https://picture-shop.netlify.app/",
+      desc1:
+        "Strona z elementami portfolio fotografa. Działający koszyk i zwalidowany formularz wiadomości",
+      desc2: "Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts",
+    },
+    {
+      name: "Betty Craft Designs",
+      img: img1,
+      code: "https://github.com/Zyar3k/online_shop_bcd",
+      demo: "https://online-shop-bcd.herokuapp.com/",
+      desc1: "Indywidualny projekt na zakończenie Bootcampu Web Developer Plus",
+      desc2:
+        "Tech stack: MERN - MongoDB, Express, React (Redux, Router), Node.js | Sass | CRA - webpack | npm | Yarn",
+    },
+    {
+      name: "Cz@-App",
+      img: img2,
+      code: "https://github.com/Zyar3k/your_chat_app/tree/master",
+      demo: "https://youthful-clarke-0b8301.netlify.app/",
+      desc1: "Aplikacja czatowa w czasie rzeczywistym",
+      desc2:
+        "Tech stack: HTML | Sass | RWD | React | Express | Node | Socket.IO | CRA- webpack | git | Yarn",
+    },
+    {
+      name: "statystyki CovID-19",
+      img: img3,
+      code: "https://github.com/Zyar3k/covid-19_counter",
+      demo: "https://covid-19-counter.netlify.app/",
+      desc1:
+        "Aplikacja pozwalająca śledzić na bieżąco statystyki dotyczące Covid-19",
+      desc2: "Tech stack: HTML | Sass | RWD | React | API | npm Scripts",
+    },
+    {
+      name: "kamień - papier - nożyce",
+      img: img4,
+      code: "https://github.com/Zyar3k/rock-paper-scissors",
+      demo: "https://zyar3k.github.io/rock-paper-scissors/",
+      desc1: "Pierwsza gra napisana w JavaScript wyświetlająca wynik rozgrywki",
+      desc2: "Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts",
+    },
+    {
+      name: "numerologia",
+      img: img5,
+      code: "https://github.com/Zyar3k/numerology_4.0.0",
+      demo: "https://numerologia.netlify.app/",
+      desc1:
+        "Aplikacja pozwalająca poznać swoje specjalne liczby i sprawdzić wibracje numerologiczne na dwoolny dzień/miesiąc",
+      desc2: "Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts",
+    },
+
+    {
+      name: "Aplikacja pogodowa",
+      img: img7,
+      code: "https://github.com/Zyar3k/local_weather_app",
+      demo: "https://agitated-aryabhata-cef99e.netlify.app/",
+      desc1:
+        "Aplikacja pogodowa z użyciem API - wyświetlająca aktualną pogodę w szukanym mieście",
+      desc2:
+        "Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | Yarn",
+    },
+    {
+      name: "panel administracyjny",
+      img: img8,
+      code: "https://github.com/Zyar3k/Solo-project",
+      demo: "https://zyar3k.github.io/Solo-project/#",
+      desc1:
+        "Pierwszy indywidualny projekt napisany podczas Bootcampu Web Developer Plus na podstawie pliku PSD od grafika",
+      desc2:
+        "Tech stack: HTML | Sass | RWD | JavaScript ES5 | Photoshop | npm Scripts",
+    },
+    {
+      name: "Projekt grupowy",
+      img: img9,
+      code: "https://github.com/Zyar3k/kodilla_group_project",
+      demo: "https://stupefied-lewin-977cb1.netlify.com/",
+      desc1:
+        "Projekt grupowy - symulacja pracy w grupie z innymi junior Front-end developerami. Każdy z uczestników wybierał/miał przydzielane zadania",
+      desc2:
+        "Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | git | Jira | kanban | Yarn",
+    },
+    {
+      name: "Do zrobienia!",
+      img: img10,
+      code: "https://github.com/Zyar3k/todo_react_app",
+      demo: "https://dozrobienia-app.netlify.app/",
+      desc1:
+        "Aplikacja ToDo - aplikacja stworzona w React. Priorytety i ukończone zadania",
+      desc2:
+        "Tech stack: HTML | Sass | RWD | React | CRA- webpack | git | Yarn",
+    },
+    {
+      name: "New Wave festival",
+      img: img11,
+      code: "https://github.com/Zyar3k/newwavefestival-feb2020",
+      demo: "https://secure-woodland-63361.herokuapp.com/",
+      desc1:
+        "Projekt treningowy - praca skupiona na backendowej stronie projektu oraz połączenie front i backendu",
+      desc2:
+        "Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | git | Yarn",
+    },
+  ],
+};
+
 const Carousel = () => {
+  const carouselElements = portfolioDB.projects.map((card, index) => (
+    <div key={index} className='card-wrapper'>
+      <div className='card'>
+        <div className='card-image'>
+          <img src={card.img} alt='img' />
+        </div>
+        <ul className='social-icons'>
+          <li>
+            <a href={card.code} target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon className='socIco' icon={faGithub} />
+            </a>
+          </li>
+          <li>
+            <a href={card.demo} target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon className='socIco' icon={faPlayCircle} />
+            </a>
+          </li>
+        </ul>
+        <div className='details'>
+          <div className='projDesc'>
+            <h4>{card.desc1}</h4>
+            <h5>{card.desc2}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  ));
   let settings = {
     dots: true,
     infinite: true,
@@ -47,427 +185,7 @@ const Carousel = () => {
   };
   return (
     <Slider className='carousel' {...settings}>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img11} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/newwavefestival-feb2020'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://secure-woodland-63361.herokuapp.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Projekt treningowy - praca skupiona na backendowej stronie
-                projektu oraz połączenie front i backendu
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | git
-                | Yarn
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img1} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/online_shop_bcd'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://online-shop-bcd.herokuapp.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                indywidualny projekt na zakończenie bootcampu web developer
-                plus.
-              </h4>
-              <h5>
-                tech stack: mern - mongodb, express, react (redux, router),
-                node.js | sass | cra - webpack | npm | yarn.
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img2} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/your_chat_app/tree/master'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://youthful-clarke-0b8301.netlify.app/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>Aplikacja czatowa w czasie rzeczywistym</h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | React | Express | Node |
-                Socket.IO | CRA- webpack | git | Yarn
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img3} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/covid-19_counter'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://covid-19-counter.netlify.app/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Aplikacja pozwalająca śledzić na bieżąco statystyki dotyczące
-                Covid-19
-              </h4>
-              <h5>Tech stack: HTML | Sass | RWD | React | API | npm Scripts</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img4} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/rock-paper-scissors'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://zyar3k.github.io/rock-paper-scissors/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Pierwsza gra napisana w JavaScript wyświetlająca wynik rozgrywki
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img5} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/numerology_4.0.0'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://numerologia.netlify.app/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Aplikacja pozwalająca poznać swoje specjalne liczby i sprawdzić
-                wibracje numerologiczne na dwoolny dzień/miesiąc
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img6} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/picture_shop'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://picture-shop.netlify.app/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Strona z elementami portfolio fotografa. Działający koszyk i
-                zwalidowany formularz wiadomości
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img7} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/local_weather_app'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://agitated-aryabhata-cef99e.netlify.app/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Aplikacja pogodowa z użyciem API - wyświetlająca aktualną pogodę
-                w szukanym mieście
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | React | API | CRA- webpack |
-                Yarn
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img8} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/Solo-project'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://zyar3k.github.io/Solo-project/#'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Pierwszy indywidualny projekt napisany podczas Bootcampu Web
-                Developer Plus na podstawie pliku PSD od grafika
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | JavaScript ES5 | Photoshop | npm
-                Scripts
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img9} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/kodilla_group_project'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://stupefied-lewin-977cb1.netlify.com/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Projekt grupowy - symulacja pracy w grupie z innymi junior
-                Front-end developerami. Każdy z uczestników wybierał/miał
-                przydzielane zadania
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | git
-                | Jira | kanban | Yarn
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='card-wrapper'>
-        <div className='card'>
-          <div className='card-image'>
-            <img src={img10} alt='img' />
-          </div>
-          <ul className='social-icons'>
-            <li>
-              <a
-                href='https://github.com/Zyar3k/todo_react_app'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://dozrobienia-app.netlify.app/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FontAwesomeIcon className='socIco' icon={faLinkedin} />
-              </a>
-            </li>
-          </ul>
-          <div className='details'>
-            <div className='projDesc'>
-              <h4>
-                Aplikacja ToDo - aplikacja stworzona w React. Priorytety i
-                ukończone zadania
-              </h4>
-              <h5>
-                Tech stack: HTML | Sass | RWD | React | CRA- webpack | git |
-                Yarn
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
+      {carouselElements}
     </Slider>
   );
 };
