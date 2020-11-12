@@ -20,3 +20,8 @@ a {
 a:hover {
   color: $color4;
 }
+
+.viewContent {
+  height: calc(100vh - 112px);
+  width: 100%;
+}
