@@ -1,5 +1,6 @@
+@import "../../../styles/global.scss";
+
 .carousel {
-  // border: 2px solid red;
   margin: 0 auto;
   width: 90%;
 }
@@ -18,20 +19,49 @@
 .card {
   width: 100%;
   height: 500px;
-  // border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  // box-shadow: 0 0 12px black;
+  border: 4px solid $color3;
+
+  .card-name {
+    position: absolute;
+    z-index: 3;
+    background: rgba(177, 154, 51, 0.8);
+    width: 100%;
+    // top: 20%;
+    top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &::after,
+    &::before {
+      // position: absolute;
+      content: "";
+      // margin-top: 10px;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to left, $color2, transparent, $color2);
+      transition: all 0.5s ease-out;
+    }
+
+    p {
+      padding: 20px 10px;
+      color: blck;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
 
   .card-image {
     position: absolute;
     top: 0;
-    left: o;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: #000;
+    background-color: $color2;
     transition: 0.5s;
     img {
       width: 100%;
@@ -41,9 +71,24 @@
   }
 
   &:hover {
+    border-color: $color3;
     img {
       opacity: 0.4;
       transition: 0.5s;
+    }
+
+    .card-name {
+      transition: all 0.9s;
+      transform: translateY(-70px);
+      // top: 4%;
+      p {
+        transition: 1s;
+        color: $color1;
+      }
+      &::after,
+      &::before {
+        background: linear-gradient(to left, $color1, transparent, $color1);
+      }
     }
 
     .card-image {
@@ -70,9 +115,9 @@
       height: 50px;
       line-height: 50px;
       text-align: center;
-      background: #fff;
+      background: $color4;
       font-size: 23px;
-      color: #333;
+      color: $color2;
       font-weight: bold;
       margin: 0 6px;
       transition: 0.4s;
@@ -89,18 +134,21 @@
   }
 }
 .social-icons li a:hover {
-  background: #000;
+  background: $color3;
   transition: 0.2s;
   .socIco {
-    color: #fff;
+    color: $color1;
   }
 }
 
 .social-icons li a .socIco {
   transition: 0.8s;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
   &:hover {
     transform: rotateY(360deg);
-    color: #fff;
+    color: $color1;
   }
 }
 
@@ -115,28 +163,24 @@
   position: absolute;
   bottom: 400px;
   left: 0;
-  background: #fff;
+  background: $color3;
   width: 100%;
   height: 160px;
   z-index: 1;
   padding: 10px;
   transition: 0.6s;
+
   .projDesc {
     margin: 10px 0;
     padding: 0;
     text-align: center;
-    color: #333;
-    // background: grey;
-    // width: 100%;
-    // height: 100%;
+    color: $color2;
     h4 {
-      // background: red;
       padding: 10px;
     }
     h5 {
       padding: 0 20px;
       letter-spacing: 2px;
-      // background: blue;
     }
   }
 }
@@ -153,8 +197,8 @@
       button {
         width: 20px;
         height: 20px;
-        border: 1px solid #fff;
         border-radius: 20px;
+        background: $color3;
         &:before {
           position: absolute;
           top: 50%;
@@ -166,7 +210,7 @@
           text-align: center;
           opacity: 0.5s;
           color: #000;
-          background-color: #fff;
+          background-color: $color2;
           transform: translate(-50%, -50%);
           transition: all 0.3s ease-in-out;
         }
@@ -174,9 +218,9 @@
       &.slick-active,
       &:hover {
         button {
-          border-color: black;
+          border-color: $color2;
           &::before {
-            background-color: black;
+            background-color: $color2;
             opacity: 1;
           }
         }
@@ -188,16 +232,17 @@
   .slick-next {
     width: 50px;
     height: 50px;
-    background: #fff;
+    background: $color3;
+    border-radius: 50%;
     z-index: 10;
   }
   .slick-prev:hover,
   .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
-    color: #fff;
+    color: $color1;
     outline: none;
-    background: #fff;
+    background: $color4;
   }
 
   .slick-prev::before,
@@ -211,5 +256,86 @@
 
   .slick-prev {
     left: -55px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel {
+    margin: 0 auto;
+    width: 100%;
+    background: red;
+  }
+
+  .carousel {
+    .slick-dots {
+      bottom: -4vw;
+      li {
+        button {
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          background: $color3;
+          &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            content: "";
+            text-align: center;
+            opacity: 0.5s;
+            color: #000;
+            background-color: $color2;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        &.slick-active,
+        &:hover {
+          button {
+            border-color: $color2;
+            &::before {
+              background-color: $color2;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 50px;
+      height: 50px;
+      background: $color3;
+      border-radius: 50%;
+      z-index: 10;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus {
+      color: $color1;
+      outline: none;
+      background: $color4;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+      color: #000;
+    }
+
+    .slick-next {
+      right: 20px;
+      top: unset;
+      bottom: 20px;
+    }
+
+    .slick-prev {
+      left: 20px;
+      top: unset;
+      bottom: 20px;
+    }
   }
 }

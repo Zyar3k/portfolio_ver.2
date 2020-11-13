@@ -23,18 +23,23 @@ function Navbar() {
             <FontAwesomeIcon icon={click ? faTimes : faBars} />
           </div>
           <ul className={click ? "navMenu active" : "navMenu"}>
-            <li className='navItem'>
-              <NavLink to='/' className='navLinks' onClick={closeMobileMenu}>
+            {/* <li className='navItem'>
+              <NavLink
+                exact
+                to='/'
+                className='navLinks'
+                onClick={closeMobileMenu}
+              >
                 Home
               </NavLink>
-            </li>
+            </li> */}
             <li className='navItem'>
               <NavLink
                 to='/about'
                 className='navLinks'
                 onClick={closeMobileMenu}
               >
-                about
+                O mnie
               </NavLink>
             </li>
             <li className='navItem'>
@@ -43,7 +48,7 @@ function Navbar() {
                 className='navLinks'
                 onClick={closeMobileMenu}
               >
-                skills
+                Umiejętności
               </NavLink>
             </li>
             <li className='navItem'>
@@ -61,7 +66,7 @@ function Navbar() {
                 className='navLinks'
                 onClick={closeMobileMenu}
               >
-                contact
+                Kontakt
               </NavLink>
             </li>
           </ul>

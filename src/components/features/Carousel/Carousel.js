@@ -134,6 +134,9 @@ const Carousel = () => {
   const carouselElements = portfolioDB.projects.map((card, index) => (
     <div key={index} className='card-wrapper'>
       <div className='card'>
+        <div className='card-name'>
+          <p>{card.name}</p>
+        </div>
         <div className='card-image'>
           <img src={card.img} alt='img' />
         </div>
