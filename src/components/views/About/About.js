@@ -36,7 +36,7 @@ const About = () => {
           <a href='https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow'>
             DesignCourse
           </a>
-          - fachowo i konretnie na temat designu )
+          - fachowo i konkretnie na temat designu )
         </p>
       </section>
       <section>

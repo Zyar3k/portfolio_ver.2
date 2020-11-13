@@ -3,6 +3,16 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  animation: footIn 4s;
+}
+
+@keyframes footIn {
+  0% {
+    transform: translateY(32px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .footer {
