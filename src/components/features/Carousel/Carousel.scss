@@ -263,79 +263,25 @@
   .carousel {
     margin: 0 auto;
     width: 100%;
-    background: red;
   }
 
   .carousel {
     .slick-dots {
       bottom: -4vw;
-      li {
-        button {
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
-          background: $color3;
-          &:before {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 10px;
-            height: 10px;
-            border-radius: 10px;
-            content: "";
-            text-align: center;
-            opacity: 0.5s;
-            color: #000;
-            background-color: $color2;
-            transform: translate(-50%, -50%);
-            transition: all 0.3s ease-in-out;
-          }
-        }
-        &.slick-active,
-        &:hover {
-          button {
-            border-color: $color2;
-            &::before {
-              background-color: $color2;
-              opacity: 1;
-            }
-          }
-        }
-      }
     }
 
     .slick-prev,
     .slick-next {
-      width: 50px;
-      height: 50px;
-      background: $color3;
-      border-radius: 50%;
-      z-index: 10;
-    }
-    .slick-prev:hover,
-    .slick-prev:focus,
-    .slick-next:hover,
-    .slick-next:focus {
-      color: $color1;
-      outline: none;
-      background: $color4;
-    }
-
-    .slick-prev::before,
-    .slick-next::before {
-      color: #000;
+      top: unset;
+      bottom: 20px;
     }
 
     .slick-next {
       right: 20px;
-      top: unset;
-      bottom: 20px;
     }
 
     .slick-prev {
       left: 20px;
-      top: unset;
-      bottom: 20px;
     }
   }
 }
