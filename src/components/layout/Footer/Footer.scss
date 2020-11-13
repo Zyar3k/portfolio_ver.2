@@ -4,6 +4,7 @@ footer {
   left: 0;
   right: 0;
   animation: footIn 4s;
+  z-index: 999;
 }
 
 @keyframes footIn {
@@ -46,6 +47,9 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
+  footer {
+    animation: unset;
+  }
   .footer {
     padding: 0 0 0 6px;
 

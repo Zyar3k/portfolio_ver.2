@@ -1,6 +1,9 @@
+@import "../../../styles/global.scss";
+
 .aboutContent {
   display: flex;
   flex-direction: column;
+  margin-top: 80px;
   section {
     height: calc(100% / 3);
     // border: 1px dotted white;
@@ -13,7 +16,7 @@
     p {
       height: 100%;
       text-align: center;
-      font-size: 28px;
+      font-size: 20px;
       padding: 0 40px;
       line-height: 1.6;
 
@@ -63,11 +66,37 @@
     transform: translateX(0);
   }
 }
-// @keyframes animate1 {
-//   0% {
-//     transform: translateX(-100%);
-//   }
-//   100% {
-//     transform: translateX(100%);
-//   }
-// }
+
+@media screen and (max-width: 960px) {
+  .aboutContent {
+    padding: 20px;
+    section {
+      height: unset;
+      padding: 0 20px;
+
+      p {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 2px;
+        font-size: 18px;
+        padding: 0;
+
+        img {
+          display: none;
+        }
+      }
+
+      &:nth-child(1) p {
+        animation: unset;
+        padding: 0;
+      }
+      &:nth-child(2) p {
+        padding: 0;
+        animation: unset;
+      }
+      &:nth-child(3) p {
+        padding: 0;
+      }
+    }
+  }
+}
