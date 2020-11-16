@@ -90,11 +90,9 @@ nav {
 
         &:hover,
         &.active {
-          border-bottom: 4px solid #fff;
           border-bottom: 4px solid $color4;
           color: $color4;
           text-shadow: 0 0 4px $color4;
-          transition: all 0.2s ease-out;
           transition: 0.2s all ease-in-out;
         }
       }
@@ -107,16 +105,8 @@ nav {
 }
 
 @media screen and (max-width: 960px) {
-  // .NavbarItems {
-  //   position: relative;
-  // }
-
   .navbar {
     animation: unset;
-    //   position: fixed;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
   }
 
   .navbarContainer {
@@ -124,7 +114,6 @@ nav {
       display: flex;
       flex-direction: column;
       width: 100%;
-      // height: 90vh;
       height: calc(100vh - 112px);
       position: absolute;
       top: 80px;
@@ -149,8 +138,8 @@ nav {
           display: table;
 
           &:hover {
-            background-color: #fff;
-            color: #242424;
+            border-bottom: unset;
+            color: $color4;
             border-radius: 0;
           }
         }
