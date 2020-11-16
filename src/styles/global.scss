@@ -31,8 +31,9 @@ a:hover {
   margin-top: 80px;
 }
 
-// @media (max-width: 960px) {
-//   .viewContent {
-//     // min-height: calc(100vh - 112px);
-//   }
-// }
+@media (max-width: 960px) {
+  .viewContent {
+    min-height: 100vh;
+    margin-bottom: 32px;
+  }
+}

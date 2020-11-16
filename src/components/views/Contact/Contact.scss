@@ -3,6 +3,8 @@
 .contactContent {
   display: flex;
   flex-wrap: wrap;
+  // margin-bottom: 32px;
+  // padding-bottom: 50px;
 }
 
 .quarter {
@@ -96,6 +98,8 @@
     bottom: -24px;
     transition: all 0.4s ease-in-out;
     text-shadow: 0 0 4px $color1, 0 0 8px $color1;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -119,17 +123,25 @@
     font-size: 30px;
   }
 
+  .icoBtnMob {
+    display: none;
+  }
+
   &.cvBtn {
     margin: 0 4px;
     border: none;
 
     img {
-      height: 40px;
+      height: 50px;
       transition: all 0.2s ease-in-out;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      border-radius: 10px;
     }
 
     &:hover img {
       transform: scale(1.1);
+      background: rgba(255, 255, 255, 0.4);
     }
   }
 
@@ -167,12 +179,146 @@
       left: 0;
       color: $color1;
       text-shadow: unset;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to left, $color1, transparent);
+      }
     }
   }
 
   .checkBtn {
     bottom: 20px;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .contactContent {
+    margin-bottom: 32px;
+  }
+  .quarter {
+    position: unset;
+    width: 100%;
+    height: unset;
+    &:nth-last-of-type(1) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .box {
+    width: 90%;
+    height: 240px;
+    position: absolute;
+    position: unset;
+    margin: 10px auto;
+    box-shadow: 0 0 4px $color3, 0 0 8px $color3;
+    border-radius: 10px;
+
+    &::before {
+      display: none;
+    }
+
+    &.box1 {
+      animation: unset;
+    }
+    &.box2 {
+      animation: unset;
+    }
+    &.box3 {
+      animation: unset;
+    }
+    &.box4 {
+      animation: unset;
+    }
+  }
+
+  // box title
+  .box {
+    &.box1 .boxTitle .icon {
+      color: #ff0000;
+    }
+    &.box2 .boxTitle .icon {
+      color: #2867b2;
+    }
+    &.box3 .boxTitle .icon {
+      color: #24292e;
+    }
+    &.box4 .boxTitle .icon {
+      color: #c71610;
+    }
+
+    .boxTitle {
+      justify-content: space-evenly;
+      font-size: 24px;
+
+      .icon {
+        opacity: 1;
+        left: 0;
+        color: $color3;
+      }
+
+      h3 {
+        color: $color3;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  // btn styles
+  .box .checkBtn {
+    padding: 6px 26px;
+    color: $color3;
+    color: $color1;
+    border: 2px solid $color3;
+    bottom: 20px;
+    background: $color3;
+    opacity: 1;
+    border-radius: 10px;
+
+    .icoBtnMob {
+      font-size: 24px;
+      display: block;
+    }
+
+    .icoBtn {
+      display: none;
+    }
+
+    &.cvBtn {
+      background: none;
+
+      &:hover img {
+        transform: unset;
+      }
+    }
+
+    &:hover {
+      background: $color4;
+      border: 2px solid $color2;
+      color: $color2;
+
+      &.cvBtn {
+        background: none;
+        border: none;
+        color: none;
+      }
+    }
+  }
+
+  .box:hover {
+    box-shadow: unset;
+    border: 4px solid $color3;
+    .boxTitle {
+      h3 {
+        color: $color2;
+      }
+    }
   }
 }
 

@@ -6,6 +6,7 @@ import {
   faAngleDoubleUp,
   faAngleDoubleLeft,
   faAngleDoubleRight,
+  faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 import pl from "../../../images/pin_pl.png";
@@ -58,6 +59,7 @@ const Contact = () => {
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleLeft} />
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleUp} />
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleRight} />
+              <FontAwesomeIcon className='icoBtnMob' icon={faSignInAlt} />
             </a>
           </div>
         </section>
@@ -76,6 +78,7 @@ const Contact = () => {
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleLeft} />
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleUp} />
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleRight} />
+              <FontAwesomeIcon className='icoBtnMob' icon={faSignInAlt} />
             </a>
           </div>
         </section>
@@ -95,6 +98,7 @@ const Contact = () => {
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleLeft} />
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleUp} />
               <FontAwesomeIcon className='icoBtn' icon={faAngleDoubleRight} />
+              <FontAwesomeIcon className='icoBtnMob' icon={faSignInAlt} />
             </a>
           </div>
         </section>
