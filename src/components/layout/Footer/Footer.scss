@@ -1,3 +1,5 @@
+@import "../../../styles/global.scss";
+
 footer {
   position: fixed;
   bottom: 0;
@@ -24,6 +26,7 @@ footer {
   padding: 0 6px;
   align-items: center;
   height: 100%;
+  color: $color3;
   height: 32px;
 
   div > span:nth-child(1) {
