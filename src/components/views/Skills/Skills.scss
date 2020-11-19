@@ -201,3 +201,141 @@
     }
   }
 }
+
+// ------------------------------------------
+
+@media screen and (max-width: 960px) {
+  .skillsContent {
+    flex-wrap: unset;
+    justify-content: unset;
+    padding: 0 20px;
+    flex-direction: column;
+    min-height: 100vh;
+    // margin-top: 80px;
+    // margin-bottom: 80px;
+  }
+
+  .skillsSection {
+    margin: 10px 0;
+
+    // main settings
+    &.sectFront {
+      height: unset;
+    }
+
+    &.sectBack,
+    &.sectTool {
+      height: unset;
+      width: 100%;
+    }
+
+    &.sectBack {
+      .skillsTitle {
+        p {
+          right: 0;
+        }
+      }
+    }
+    &.sectTool {
+      margin-bottom: 32px;
+    }
+
+    // elem settings
+
+    .skillsTitle {
+      height: unset;
+      padding: 10px 0;
+      justify-content: flex-end;
+
+      p {
+        position: unset;
+      }
+    }
+
+    .skillsWrapp {
+      height: 100%;
+
+      .skillBox {
+        .icon {
+          height: 80%;
+          background: $color1;
+
+          &.html5 {
+            color: #f16529;
+          }
+          &.css {
+            color: #2965f1;
+          }
+          &.sass {
+            color: #cd6799;
+          }
+          &.bootstrap {
+            color: #553c7b;
+          }
+          &.js {
+            color: #f0db4f;
+          }
+          &.react {
+            color: #61dbfb;
+          }
+          &.node {
+            color: #68a063;
+          }
+          &.mongo {
+            color: #3fa037;
+          }
+          &.git {
+            color: #f34f29;
+          }
+          &.npm {
+            color: #cc3534;
+          }
+          &.yarn {
+            color: #2c8ebb;
+          }
+          &.jira {
+            color: #0052cc;
+          }
+        }
+
+        .skillName {
+          bottom: 0;
+          color: $color1;
+        }
+      }
+    }
+  }
+
+  .skillsSection:hover {
+    &.sectFront {
+      .skillsWrapp {
+        box-shadow: unset;
+      }
+    }
+    &.sectBack {
+      .skillsWrapp {
+        box-shadow: unset;
+      }
+    }
+    .skillsWrapp {
+      box-shadow: unset;
+    }
+
+    &.sectFront {
+      .skillsWrapp {
+        background: none;
+      }
+    }
+
+    &.sectBack {
+      .skillsWrapp {
+        background: none;
+      }
+    }
+    &.sectTool {
+      .skillsWrapp {
+        background: none;
+      }
+    }
+  }
+}
