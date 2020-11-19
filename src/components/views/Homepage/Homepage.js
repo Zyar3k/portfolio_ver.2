@@ -1,8 +1,6 @@
 import Typical from "react-typical";
 import "./Homepage.scss";
 
-// import imgFace from "../../../images/img.jpg";
-
 const Homepage = () => {
   return (
     <>
@@ -12,14 +10,13 @@ const Homepage = () => {
             <h4 className='topWrapper'>Nazywam się Zygan...</h4>
             <div className='centralWrapper'>
               <div className='nameWrapper'>
-                {/* <img src={imgFace} alt='' /> */}
                 <div className='name'>ARKADIUSZ</div>
                 <div className='lastName'>ZYGAN</div>
               </div>
               <span className='start'>
                 <Typical
                   steps={[
-                    2000,
+                    2200,
                     "Pasja",
                     1500,
                     "Nauka",

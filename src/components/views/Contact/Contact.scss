@@ -3,8 +3,6 @@
 .contactContent {
   display: flex;
   flex-wrap: wrap;
-  // margin-bottom: 32px;
-  // padding-bottom: 50px;
 }
 
 .quarter {
@@ -50,25 +48,25 @@
   &.box1 {
     animation: animB1 0.8s;
     &::before {
-      background: #ff0000;
+      background: $clrAdobe;
     }
   }
   &.box2 {
     animation: animB2 1.2s;
     &::before {
-      background: #2867b2;
+      background: $clrLinkedin;
     }
   }
   &.box3 {
     animation: animB3 1.6s;
     &::before {
-      background: #24292e;
+      background: $clrGithub;
     }
   }
   &.box4 {
     animation: animB4 2s;
     &::before {
-      background: linear-gradient(to left, #c71610, #3b60c4, #08851b);
+      background: $clrGmail;
     }
   }
 }
@@ -121,6 +119,14 @@
   .icoBtn {
     transition: all 0.4s ease-in-out;
     font-size: 30px;
+    margin: 0 4px;
+
+    &:first-of-type {
+      transform: rotate(-90deg);
+    }
+    &.icoBtn:nth-of-type(3) {
+      transform: rotate(90deg);
+    }
   }
 
   .icoBtnMob {
@@ -147,15 +153,13 @@
 
   &:hover {
     .icoBtn:first-of-type {
-      transform: rotate(90deg);
-      margin-right: 10px;
+      transform: rotate(0deg);
     }
     .icoBtn:nth-of-type(2) {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
     .icoBtn:nth-of-type(3) {
-      transform: rotate(-90deg);
-      margin-left: 10px;
+      transform: rotate(0deg);
     }
   }
 }
@@ -240,16 +244,16 @@
   // box title
   .box {
     &.box1 .boxTitle .icon {
-      color: #ff0000;
+      color: $clrAdobe;
     }
     &.box2 .boxTitle .icon {
-      color: #2867b2;
+      color: $clrLinkedin;
     }
     &.box3 .boxTitle .icon {
-      color: #24292e;
+      color: $clrGithub;
     }
     &.box4 .boxTitle .icon {
-      color: #c71610;
+      color: $clrGmail;
     }
 
     .boxTitle {

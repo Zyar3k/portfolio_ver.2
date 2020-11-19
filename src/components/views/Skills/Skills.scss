@@ -40,6 +40,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    text-transform: uppercase;
 
     p {
       position: absolute;
@@ -118,40 +119,40 @@
         height: 80%;
 
         &.html5 {
-          color: #f16529;
+          color: $clrHtml;
         }
         &.css {
-          color: #2965f1;
+          color: $clrCss;
         }
         &.sass {
-          color: #cd6799;
+          color: $clrSass;
         }
         &.bootstrap {
-          color: #553c7b;
+          color: $clrBootstrap;
         }
         &.js {
-          color: #f0db4f;
+          color: $clrJs;
         }
         &.react {
-          color: #61dbfb;
+          color: $clrReact;
         }
         &.node {
-          color: #68a063;
+          color: $clrNode;
         }
         &.mongo {
-          color: #3fa037;
+          color: $clrMongoDB;
         }
         &.git {
-          color: #f34f29;
+          color: $clrGit;
         }
         &.npm {
-          color: #cc3534;
+          color: $clrNpm;
         }
         &.yarn {
-          color: #2c8ebb;
+          color: $clrYarn;
         }
         &.jira {
-          color: #0052cc;
+          color: $clrJira;
         }
       }
 
@@ -261,40 +262,40 @@
           background: $color1;
 
           &.html5 {
-            color: #f16529;
+            color: $clrHtml;
           }
           &.css {
-            color: #2965f1;
+            color: $clrCss;
           }
           &.sass {
-            color: #cd6799;
+            color: $clrSass;
           }
           &.bootstrap {
-            color: #553c7b;
+            color: $clrBootstrap;
           }
           &.js {
-            color: #f0db4f;
+            color: $clrJs;
           }
           &.react {
-            color: #61dbfb;
+            color: $clrReact;
           }
           &.node {
-            color: #68a063;
+            color: $clrNode;
           }
           &.mongo {
-            color: #3fa037;
+            color: $clrMongoDB;
           }
           &.git {
-            color: #f34f29;
+            color: $clrGit;
           }
           &.npm {
-            color: #cc3534;
+            color: $clrNpm;
           }
           &.yarn {
-            color: #2c8ebb;
+            color: $clrYarn;
           }
           &.jira {
-            color: #0052cc;
+            color: $clrJira;
           }
         }
 
