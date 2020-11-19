@@ -1,0 +1,203 @@
+@import "../../../styles/global.scss";
+
+.skillsContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+
+  // main settings
+  &.sectFront {
+    width: 100%;
+    height: 48%;
+  }
+
+  &.sectBack,
+  &.sectTool {
+    height: 50%;
+    width: 48%;
+  }
+
+  &.sectBack {
+    .skillsTitle {
+      p {
+        right: 80px;
+      }
+    }
+  }
+
+  // elem settings
+
+  .skillsTitle {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    p {
+      position: absolute;
+      right: 0;
+      transition: 0.5s all ease-in-out;
+      opacity: 0.5;
+    }
+  }
+
+  .skillsWrapp {
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .skillBox {
+      width: 120px;
+      height: 120px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      border: 4px solid $color3;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px $color2;
+      background: $color3;
+      transition: 0.5s all ease-in-out;
+
+      .icon {
+        font-size: 20px;
+        height: 100%;
+        padding: 10px;
+        background: $color4;
+        width: 100%;
+        transition: all 0.4s;
+        color: $color2;
+      }
+
+      .skillName {
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -30%;
+        transition: all 0.3s;
+
+        &.node {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.skillsSection:hover {
+  &.sectFront {
+    .skillsWrapp {
+      box-shadow: -6px -6px 8px $color3;
+    }
+  }
+  &.sectBack {
+    .skillsWrapp {
+      box-shadow: -6px 6px 8px $color3;
+    }
+  }
+  .skillsWrapp {
+    box-shadow: 6px 6px 8px $color3;
+
+    .skillBox {
+      .icon {
+        background: $color1;
+        height: 80%;
+
+        &.html5 {
+          color: #f16529;
+        }
+        &.css {
+          color: #2965f1;
+        }
+        &.sass {
+          color: #cd6799;
+        }
+        &.bootstrap {
+          color: #553c7b;
+        }
+        &.js {
+          color: #f0db4f;
+        }
+        &.react {
+          color: #61dbfb;
+        }
+        &.node {
+          color: #68a063;
+        }
+        &.mongo {
+          color: #3fa037;
+        }
+        &.git {
+          color: #f34f29;
+        }
+        &.npm {
+          color: #cc3534;
+        }
+        &.yarn {
+          color: #2c8ebb;
+        }
+        &.jira {
+          color: #0052cc;
+        }
+      }
+
+      .skillName {
+        color: $color1;
+        bottom: 0;
+        background: $color3;
+      }
+    }
+  }
+
+  .skillsTitle {
+    p {
+      transform: translateX(-100px) rotateY(360deg);
+      font-size: 32px;
+      opacity: 1;
+    }
+  }
+
+  &.sectFront {
+    .skillsWrapp {
+      background: linear-gradient(
+        174deg,
+        rgba(187, 168, 79, 1) 5%,
+        rgba(245, 245, 245, 1) 40%
+      );
+    }
+  }
+
+  &.sectBack {
+    .skillsWrapp {
+      background: linear-gradient(
+        15deg,
+        rgba(187, 168, 79, 1) 13%,
+        rgba(245, 245, 245, 1) 45%
+      );
+    }
+  }
+  &.sectTool {
+    .skillsWrapp {
+      background: rgb(187, 168, 79);
+      background: linear-gradient(
+        348deg,
+        rgba(187, 168, 79, 1) 5%,
+        rgba(245, 245, 245, 1) 40%
+      );
+    }
+  }
+}

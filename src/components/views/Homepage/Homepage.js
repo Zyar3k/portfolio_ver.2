@@ -19,7 +19,7 @@ const Homepage = () => {
               <span className='start'>
                 <Typical
                   steps={[
-                    1500,
+                    2000,
                     "Pasja",
                     1500,
                     "Nauka",
