@@ -32,9 +32,9 @@ a:hover {
 
 @media (max-width: 960px) {
   .viewContent {
-    min-height: 100vh;
+    // min-height: 100vh;
     min-height: calc(100vh - 112px);
-    margin-bottom: 32px;
+    // padding-bottom: 32px;
     background: $color1;
   }
 }

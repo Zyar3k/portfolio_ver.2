@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
 
-  // main settings
   &.sectFront {
     width: 100%;
     height: 48%;
@@ -31,8 +30,6 @@
       }
     }
   }
-
-  // elem settings
 
   .skillsTitle {
     height: 10%;
@@ -113,6 +110,7 @@
       box-shadow: -6px 6px 8px $color3;
     }
   }
+
   .skillsWrapp {
     box-shadow: 6px 6px 8px $color3;
 
@@ -198,6 +196,7 @@
       );
     }
   }
+
   &.sectTool {
     .skillsWrapp {
       background: rgb(187, 168, 79);
@@ -209,8 +208,6 @@
     }
   }
 }
-
-// ------------------------------------------
 
 @media screen and (max-width: 960px) {
   .skillsContent {
@@ -224,7 +221,6 @@
   .skillsSection {
     margin: 10px 0;
 
-    // main settings
     &.sectFront {
       height: unset;
     }
@@ -242,11 +238,10 @@
         }
       }
     }
-    &.sectTool {
-      margin-bottom: 32px;
-    }
 
-    // elem settings
+    &.sectTool {
+      padding-bottom: 32px;
+    }
 
     .skillsTitle {
       height: unset;
@@ -318,11 +313,13 @@
         box-shadow: unset;
       }
     }
+
     &.sectBack {
       .skillsWrapp {
         box-shadow: unset;
       }
     }
+
     .skillsWrapp {
       box-shadow: unset;
     }
@@ -338,6 +335,7 @@
         background: none;
       }
     }
+
     &.sectTool {
       .skillsWrapp {
         background: none;
