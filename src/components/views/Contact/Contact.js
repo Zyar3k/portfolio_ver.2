@@ -5,8 +5,6 @@ import "./Contact.scss";
 const Contact = () => {
   const DB = data.contact;
 
-  console.log(DB[0]);
-
   const contactSections = DB.map((item, index) => (
     <section key={index} className='quarter'>
       <div className={`box ${item.class}`}>

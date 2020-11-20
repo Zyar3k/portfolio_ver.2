@@ -39,15 +39,15 @@ const Carousel = () => {
     </div>
   ));
   let settings = {
+    autoplay: true,
+    cssEase: "linear",
     dots: true,
     infinite: true,
+    initialSlide: 1,
+    pauseOnHover: true,
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    cssEase: "linear",
-    initialSlide: 1,
-    autoplay: true,
-    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1000,
