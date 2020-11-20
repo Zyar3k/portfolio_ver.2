@@ -1,31 +1,36 @@
 import Typical from "react-typical";
 import "./Homepage.scss";
 
+import data from "../../../data/db.json";
+
 const Homepage = () => {
+  const DB = data.home[0];
+
+  console.log(DB);
   return (
     <>
       <div className='viewContent homeContent'>
         <article className='introduction'>
           <section className='top'>
-            <h4 className='topWrapper'>Nazywam się Zygan...</h4>
+            <h4 className='topWrapper'>{DB.start}</h4>
             <div className='centralWrapper'>
               <div className='nameWrapper'>
-                <div className='name'>ARKADIUSZ</div>
-                <div className='lastName'>ZYGAN</div>
+                <div className='name'>{DB.name}</div>
+                <div className='lastName'>{DB.lastName}</div>
               </div>
               <span className='start'>
                 <Typical
                   steps={[
                     2200,
-                    "Pasja",
+                    `${DB.step1}`,
                     1500,
-                    "Nauka",
+                    `${DB.step2}`,
                     1500,
-                    "Praktyka",
+                    `${DB.step3}`,
                     1500,
-                    "Praca",
+                    `${DB.step4}`,
                     1500,
-                    "Sukces",
+                    `${DB.step5}`,
                     1500,
                   ]}
                   loop={Infinity}
@@ -33,14 +38,11 @@ const Homepage = () => {
                 />
               </span>
             </div>
-            <h4 className='bottomWrapper'>Frontend Developer</h4>
+            <h4 className='bottomWrapper'>{DB.job}</h4>
           </section>
           <section className='bottom'>
-            <p>
-              Bez ciągłego wzrostu i postępu, słowa takie jak poprawa,
-              osiągnięcia i sukces nie mają znaczenia
-            </p>
-            <span>Benjamin Franklin</span>
+            <p>{DB.quote}</p>
+            <span>{DB.author}</span>
           </section>
         </article>
       </div>

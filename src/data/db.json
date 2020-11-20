@@ -1,29 +1,25 @@
 {
   "aboutDB": [
     {
-      "data": [
-        {
-          "img": "{imgLearn}",
-          "text":
-            "Nazywam się Arkadiusz Zygan. W 2019 roku postanowiłem usystematyzować wiedzę z zakresu kodowania i programowania. Na przestrzeni lat interesowałem się nowymi technologiami, jednak nie uzyskałem pełnej wiedzy teoretycznej, jak i nie zrealizowałem praktycznych projektów. Od tamtego czasu systematycznie uczę się programowania po stronie front-endu z elementami back-endu."
-        },
-        {
-          "text":
-            "Ukończyłem intensywny 9-miesięczny kurs programowania pod opieką indywidualnego mentora – bootcamp web developer plus w Kodilla. Uczestniczyłem również w szkoleniach rozszerzających moje umiejętności na platformie udemy z zakresu javascript, react i data science. Na bieżąco obserwuje zmiany w trendach, posiłkując się wieloma kanałami tematycznymi na youtube (m.in. Dev Ed - bardzo duża wiedza i zaraźliwy optymizm autora, Web Dev Simplified - 'kopalnia' wiedzy, DesignCourse - fachowo i konkretnie na temat designu).",
-          "link1": "https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q",
-          "name1": "Dev Ed",
-          "link2": "https://www.youtube.com/c/WebDevSimplified/featured",
-          "name2": "Web Dev Simplified",
-          "link3": "https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow",
-          "name3": "DesignCourse",
-          "icon": "faYoutube"
-        },
-        {
-          "img": "imgInf",
-          "text":
-            "'praktyka czyni mistrza' - każdy z nas to słyszał chociaż raz w swoim życiu. Zgadzam się, ale uważam, że trzeba dodać 'świadome ćwiczenie' - termin ten wykuł anders erics­son. Uważa on również, że aby osiągnąć wysoki poziom w dowolnej dziedzinie potrzeba nawet 10000 godzin. Zdaję sobię sprawę, że wciąż dużo pracy przede mną. Ćwiczę i rozwijam swoje umiejętności w javascript, react, html5 oraz css/sass. Wiem, że jestem na początku tej drogi, ale jestem zmotywowany, aby stawiać kolejne kroki."
-        }
-      ]
+      "img": "/static/media/learning.1460a257.png",
+      "text":
+        "Nazywam się Arkadiusz Zygan. W 2019 roku postanowiłem usystematyzować wiedzę z zakresu kodowania i programowania. Na przestrzeni lat interesowałem się nowymi technologiami, jednak nie uzyskałem pełnej wiedzy teoretycznej, jak i nie zrealizowałem praktycznych projektów. Od tamtego czasu systematycznie uczę się programowania po stronie front-endu z elementami back-endu."
+    },
+    {
+      "text":
+        "Ukończyłem intensywny 9-miesięczny kurs programowania pod opieką indywidualnego mentora – bootcamp web developer plus w Kodilla. Uczestniczyłem również w szkoleniach rozszerzających moje umiejętności na platformie udemy z zakresu javascript, react i data science. Na bieżąco obserwuje zmiany w trendach, posiłkując się wieloma kanałami tematycznymi na youtube (m.in. Dev Ed - bardzo duża wiedza i zaraźliwy optymizm autora, Web Dev Simplified - 'kopalnia' wiedzy, DesignCourse - fachowo i konkretnie na temat designu).",
+      "link1": "https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q",
+      "name1": "Dev Ed",
+      "link2": "https://www.youtube.com/c/WebDevSimplified/featured",
+      "name2": "Web Dev Simplified",
+      "link3": "https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow",
+      "name3": "DesignCourse",
+      "icon": "fab fa-youtube"
+    },
+    {
+      "img": "/static/media/infinitve.50d9c3d8.png",
+      "text":
+        "'praktyka czyni mistrza' - każdy z nas to słyszał chociaż raz w swoim życiu. Zgadzam się, ale uważam, że trzeba dodać 'świadome ćwiczenie' - termin ten wykuł anders erics­son. Uważa on również, że aby osiągnąć wysoki poziom w dowolnej dziedzinie potrzeba nawet 10000 godzin. Zdaję sobię sprawę, że wciąż dużo pracy przede mną. Ćwiczę i rozwijam swoje umiejętności w javascript, react, html5 oraz css/sass. Wiem, że jestem na początku tej drogi, ale jestem zmotywowany, aby stawiać kolejne kroki."
     }
   ],
   "contactDB": [
@@ -34,8 +30,8 @@
       "link":
         "https://drive.google.com/file/d/1d2C9pub8Kvj9UCHmJDoG0_JCUtyKupmu/view",
       "link2": "https://drive.google.com/open?id=1sixNne4mGrT94aVRdj6vGBRf9OMkvZHp",
-      "img1": "pl",
-      "img2": "uk",
+      "img1": "/static/media/pin_pl.c457f42c.png",
+      "img2": "/static/media/pin_uk.0af1eb3a.png",
       "classBtn": "cvBtn",
       "btnIcon": "fas fa-angle-double-up",
       "mobIcon": "fas fa-sign-in-alt"
@@ -63,6 +59,203 @@
       "link": "mailto:a.zygan@gmail.com",
       "btnIcon": "fas fa-angle-double-up",
       "mobIcon": "fas fa-sign-in-alt"
+    }
+  ],
+  "footerDB": [
+    {
+      "text1": "zygan",
+      "text2": "arkadiusz",
+      "text3": "2020",
+      "social": [
+        {
+          "link": "https://www.linkedin.com/in/arkadiusz-zygan/",
+          "icon": "fab fa-linkedin"
+        },
+        {
+          "link": "https://github.com/Zyar3k",
+          "icon": "fab fa-github"
+        },
+        {
+          "link": "mailto:a.zygan@gmail.com",
+          "icon": "fas fa-envelope"
+        }
+      ],
+      "footMenu": [
+        {
+          "link": "/portfolio",
+          "name": "Portfolio"
+        },
+        {
+          "link": "/contact",
+          "name": "Kontakt"
+        }
+      ]
+    }
+  ],
+  "home":[
+    {
+      "start": "Nazywam się Zygan...",
+      "name": "ARKADIUSZ",
+      "lastName": "ZYGAN",
+      "job": "Frontend Developer",
+      "quote": "Bez ciągłego wzrostu i postępu, słowa takie jak poprawa, osiągnięcia i sukces nie mają znaczenia",
+      "author": "Benjamin Franklin",
+      "step1": "Pasja",
+      "step2": "Nauka",
+      "step3": "Praktyka",
+      "step4": "Praca",
+      "step5": "Sukces"
+    }
+  ],
+  "navbarDB":[
+    {
+      "logo": "ZYGAN AREK",
+      "navLinks": [
+        {
+          "link": "/about",
+          "name": "O mnie"
+        },
+        {
+          "link": "/skills",
+          "name": "Umiejętności"
+        },
+        {
+          "link": "/portfolio",
+          "name": "Portfolio"
+        },
+        {
+          "link": "/contact",
+          "name": "Kontakt"
+        }
+      ]
+    }
+  ],
+  "portfolioDB": [
+    {
+      "name": "picture shop",
+      "img": "/static/media/Picture_shop.c7989b2d.png",
+      "code": "https://github.com/Zyar3k/picture_shop",
+      "demo": "https://picture-shop.netlify.app/",
+      "desc1":
+        "Strona z elementami portfolio fotografa. Działający koszyk i zwalidowany formularz wiadomości",
+      "desc2": "Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "Betty Craft Designs",
+      "img": "/static/media/bcd.0273e508.png",
+      "code": "https://github.com/Zyar3k/online_shop_bcd",
+      "demo": "https://online-shop-bcd.herokuapp.com/",
+      "desc1": "Indywidualny projekt na zakończenie Bootcampu Web Developer Plus",
+      "desc2":
+        "Tech stack: MERN - MongoDB, Express, React (Redux, Router), Node.js | Sass | CRA - webpack | npm | Yarn",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "Cz@-App",
+      "img": "/static/media/czatap_port.778ddc9f.png",
+      "code": "https://github.com/Zyar3k/your_chat_app/tree/master",
+      "demo": "https://youthful-clarke-0b8301.netlify.app/",
+      "desc1": "Aplikacja czatowa w czasie rzeczywistym",
+      "desc2":
+        "Tech stack: HTML | Sass | RWD | React | Express | Node | Socket.IO | CRA- webpack | git | Yarn",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "statystyki CovID-19",
+      "img": "/static/media/Covid-19 Counter.824c69f5.png",
+      "code": "https://github.com/Zyar3k/covid-19_counter",
+      "demo": "https://covid-19-counter.netlify.app/",
+      "desc1":
+        "Aplikacja pozwalająca śledzić na bieżąco statystyki dotyczące Covid-19",
+      "desc2": "Tech stack: HTML | Sass | RWD | React | API | npm Scripts",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "kamień - papier - nożyce",
+      "img": "/static/media/rps.3dda273a.png",
+      "code": "https://github.com/Zyar3k/rock-paper-scissors",
+      "demo": "https://zyar3k.github.io/rock-paper-scissors/",
+      "desc1": "Pierwsza gra napisana w JavaScript wyświetlająca wynik rozgrywki",
+      "desc2": "Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "numerologia",
+      "img": "/static/media/Numerologia.8552b7d2.png",
+      "code": "https://github.com/Zyar3k/numerology_4.0.0",
+      "demo": "https://numerologia.netlify.app/",
+      "desc1":
+        "Aplikacja pozwalająca poznać swoje specjalne liczby i sprawdzić wibracje numerologiczne na dwoolny dzień/miesiąc",
+      "desc2": "Tech stack: HTML | Sass | RWD | JavaScript ES5 | npm Scripts",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+
+    {
+      "name": "Aplikacja pogodowa",
+      "img": "/static/media/local_weather.69a3fe0a.jpg",
+      "code": "https://github.com/Zyar3k/local_weather_app",
+      "demo": "https://agitated-aryabhata-cef99e.netlify.app/",
+      "desc1":
+        "Aplikacja pogodowa z użyciem API - wyświetlająca aktualną pogodę w szukanym mieście",
+      "desc2":
+        "Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | Yarn",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "panel administracyjny",
+      "img": "/static/media/panel_adm.70f98583.png",
+      "code": "https://github.com/Zyar3k/Solo-project",
+      "demo": "https://zyar3k.github.io/Solo-project/#",
+      "desc1":
+        "Pierwszy indywidualny projekt napisany podczas Bootcampu Web Developer Plus na podstawie pliku PSD od grafika",
+      "desc2":
+        "Tech stack: HTML | Sass | RWD | JavaScript ES5 | Photoshop | npm Scripts",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "Projekt grupowy",
+      "img": "/static/media/group_project.8bb51d45.png",
+      "code": "https://github.com/Zyar3k/kodilla_group_project",
+      "demo": "https://stupefied-lewin-977cb1.netlify.com/",
+      "desc1":
+        "Projekt grupowy - symulacja pracy w grupie z innymi junior Front-end developerami. Każdy z uczestników wybierał/miał przydzielane zadania",
+      "desc2":
+        "Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | git | Jira | kanban | Yarn",
+        "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "Do zrobienia!",
+      "img": "/static/media/toDoApp.44e348f3.png",
+      "code": "https://github.com/Zyar3k/todo_react_app",
+      "demo": "https://dozrobienia-app.netlify.app/",
+      "desc1":
+        "Aplikacja ToDo - aplikacja stworzona w React. Priorytety i ukończone zadania",
+      "desc2":
+        "Tech stack: HTML | Sass | RWD | React | CRA- webpack | git | Yarn",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
+    },
+    {
+      "name": "New Wave festival",
+      "img": "/static/media/new_wave.3e094d60.png",
+      "code": "https://github.com/Zyar3k/newwavefestival-feb2020",
+      "demo": "https://secure-woodland-63361.herokuapp.com/",
+      "desc1":
+        "Projekt treningowy - praca skupiona na backendowej stronie projektu oraz połączenie front i backendu",
+      "desc2":
+        "Tech stack: HTML | Sass | RWD | React | API | CRA- webpack | git | Yarn",
+      "icon": "fab fa-github",
+      "icon1": "fas fa-play-circle"
     }
   ],
   "skillsDB": [

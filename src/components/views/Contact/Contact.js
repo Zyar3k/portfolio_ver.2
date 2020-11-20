@@ -1,7 +1,7 @@
 import data from "../../../data/db.json";
 
-import pl from "../../../images/pin_pl.png";
-import uk from "../../../images/pin_uk.png";
+// import pl from "../../../images/pin_pl.png";
+// import uk from "../../../images/pin_uk.png";
 
 import "./Contact.scss";
 
@@ -23,7 +23,7 @@ const Contact = () => {
               rel='noopener noreferrer'
               className='checkBtn cvBtn'
             >
-              <img src={pl} alt='plFlag' />
+              <img src={item.img1} alt='plFlag' />
             </a>
             <a
               href='https://drive.google.com/open?id=1sixNne4mGrT94aVRdj6vGBRf9OMkvZHp'
@@ -31,7 +31,7 @@ const Contact = () => {
               rel='noopener noreferrer'
               className='checkBtn cvBtn'
             >
-              <img src={uk} alt='ukFlag' />
+              <img src={item.img2} alt='ukFlag' />
             </a>
           </span>
         ) : (
