@@ -9,7 +9,7 @@ import imgInf from "../../../images/infinitve.png";
 const About = () => {
   const aboutSections = aboutDB.data.map((item, index) => (
     <section key={index}>
-      {item.img ? <img src={item.img} alt='learning' /> : null}
+      {item.img ? <img src={imgLearn} alt='learning' /> : null}
       <p>{item.text}</p>
       {!item.img ? (
         <div className='links'>

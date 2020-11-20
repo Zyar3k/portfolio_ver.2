@@ -71,8 +71,11 @@
       transition: 0.5s all ease-in-out;
 
       .icon {
-        font-size: 20px;
+        font-size: 60px;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
         background: $color4;
         width: 100%;
@@ -160,6 +163,10 @@
         color: $color1;
         bottom: 0;
         background: $color3;
+
+        &.node {
+          font-size: 12px;
+        }
       }
     }
   }

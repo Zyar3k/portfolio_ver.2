@@ -1,0 +1,148 @@
+{
+  "aboutDB": [
+    {
+      "data": [
+        {
+          "img": "{imgLearn}",
+          "text":
+            "Nazywam się Arkadiusz Zygan. W 2019 roku postanowiłem usystematyzować wiedzę z zakresu kodowania i programowania. Na przestrzeni lat interesowałem się nowymi technologiami, jednak nie uzyskałem pełnej wiedzy teoretycznej, jak i nie zrealizowałem praktycznych projektów. Od tamtego czasu systematycznie uczę się programowania po stronie front-endu z elementami back-endu."
+        },
+        {
+          "text":
+            "Ukończyłem intensywny 9-miesięczny kurs programowania pod opieką indywidualnego mentora – bootcamp web developer plus w Kodilla. Uczestniczyłem również w szkoleniach rozszerzających moje umiejętności na platformie udemy z zakresu javascript, react i data science. Na bieżąco obserwuje zmiany w trendach, posiłkując się wieloma kanałami tematycznymi na youtube (m.in. Dev Ed - bardzo duża wiedza i zaraźliwy optymizm autora, Web Dev Simplified - 'kopalnia' wiedzy, DesignCourse - fachowo i konkretnie na temat designu).",
+          "link1": "https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q",
+          "name1": "Dev Ed",
+          "link2": "https://www.youtube.com/c/WebDevSimplified/featured",
+          "name2": "Web Dev Simplified",
+          "link3": "https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow",
+          "name3": "DesignCourse",
+          "icon": "faYoutube"
+        },
+        {
+          "img": "imgInf",
+          "text":
+            "'praktyka czyni mistrza' - każdy z nas to słyszał chociaż raz w swoim życiu. Zgadzam się, ale uważam, że trzeba dodać 'świadome ćwiczenie' - termin ten wykuł anders erics­son. Uważa on również, że aby osiągnąć wysoki poziom w dowolnej dziedzinie potrzeba nawet 10000 godzin. Zdaję sobię sprawę, że wciąż dużo pracy przede mną. Ćwiczę i rozwijam swoje umiejętności w javascript, react, html5 oraz css/sass. Wiem, że jestem na początku tej drogi, ale jestem zmotywowany, aby stawiać kolejne kroki."
+        }
+      ]
+    }
+  ],
+  "contactDB": [
+    {
+      "class": "box1",
+      "mainIcon": "fas fa-file-pdf",
+      "title": "CURRICULUM VITAE",
+      "link":
+        "https://drive.google.com/file/d/1d2C9pub8Kvj9UCHmJDoG0_JCUtyKupmu/view",
+      "link2": "https://drive.google.com/open?id=1sixNne4mGrT94aVRdj6vGBRf9OMkvZHp",
+      "img1": "pl",
+      "img2": "uk",
+      "classBtn": "cvBtn",
+      "btnIcon": "fas fa-angle-double-up",
+      "mobIcon": "fas fa-sign-in-alt"
+    },
+    {
+      "class": "box2",
+      "mainIcon": "fab fa-linkedin",
+      "title": "LINKEDIN",
+      "link": "https://www.linkedin.com/in/arkadiusz-zygan/",
+      "btnIcon": "fas fa-angle-double-up",
+      "mobIcon": "fas fa-sign-in-alt"
+    },
+    {
+      "class": "box3",
+      "mainIcon": "fab fa-github",
+      "title": "GITHUB",
+      "link": "https://github.com/Zyar3k",
+      "btnIcon": "fas fa-angle-double-up",
+      "mobIcon": "fas fa-sign-in-alt"
+    },
+    {
+      "class": "box4",
+      "mainIcon": "fas fa-envelope",
+      "title": "GMAIL",
+      "link": "mailto:a.zygan@gmail.com",
+      "btnIcon": "fas fa-angle-double-up",
+      "mobIcon": "fas fa-sign-in-alt"
+    }
+  ],
+  "skillsDB": [
+    {
+      "frontTitle": {
+        "title": "Front-end"
+      },
+      "backTitle": {
+        "title": "Back-end"
+      },
+      "toolsTitle": {
+        "title": "narzędzia"
+      },
+      "frontContent": [
+        {
+          "icon": "fab fa-html5",
+          "name": "HTML5",
+          "class": "html5"
+        },
+        {
+          "icon": "fab fa-css3",
+          "name": "CSS",
+          "class": "css"
+        },
+        {
+          "icon": "fab fa-sass",
+          "name": "Sass",
+          "class": "sass"
+        },
+        {
+          "icon": "fab fa-bootstrap",
+          "name": "Bootstrap",
+          "class": "bootstrap"
+        },
+        {
+          "icon": "fab fa-js",
+          "name": "JavaScript",
+          "class": "js"
+        },
+        {
+          "icon": "fab fa-react",
+          "name": "React+Redux",
+          "class": "react"
+        }
+      ],
+      "backContent": [
+        {
+          "icon": "fab fa-node",
+          "name": "Node.js - Express",
+          "class": "node",
+          "class1": "node"
+        },
+        {
+          "icon": "fab fa-mdb",
+          "name": "MongoDB",
+          "class": "mongo"
+        }
+      ],
+      "toolsContent": [
+        {
+          "icon": "fab fa-git-alt",
+          "name": "git",
+          "class": "git"
+        },
+        {
+          "icon": "fab fa-npm",
+          "name": "npm",
+          "class": "npm"
+        },
+        {
+          "icon": "fab fa-yarn",
+          "name": "yarn",
+          "class": "yarn"
+        },
+        {
+          "icon": "fab fa-jira",
+          "name": "Jira",
+          "class": "jira"
+        }
+      ]
+    }
+  ]
+}
