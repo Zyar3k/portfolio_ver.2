@@ -27,9 +27,8 @@
   .card-name {
     position: absolute;
     z-index: 3;
-    background: rgba(177, 154, 51, 0.8);
+    background: rgba(177, 154, 51, 0.9);
     width: 100%;
-    // top: 20%;
     top: 80px;
     text-align: center;
     display: flex;
@@ -37,9 +36,7 @@
 
     &::after,
     &::before {
-      // position: absolute;
       content: "";
-      // margin-top: 10px;
       width: 100%;
       height: 2px;
       background: linear-gradient(to left, $color2, transparent, $color2);
@@ -80,7 +77,6 @@
     .card-name {
       transition: all 0.9s;
       transform: translateY(-70px);
-      // top: 4%;
       p {
         transition: 1s;
         color: $color1;

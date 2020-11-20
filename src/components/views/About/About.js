@@ -1,15 +1,9 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-
 import data from "../../../data/db.json";
 
 import "./About.scss";
 
-// import imgLearn from "../../../images/learning.png";
-// import imgInf from "../../../images/infinitve.png";
-
 const About = () => {
-  const DB = data.aboutDB;
+  const DB = data.about;
   const aboutSections = DB.map((item, index) => (
     <section key={index}>
       {item.img ? <img src={item.img} alt='learning' /> : null}

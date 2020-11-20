@@ -1,7 +1,7 @@
 {
-  "aboutDB": [
+  "about": [
     {
-      "img": "/static/media/learning.1460a257.png",
+      "img": "./images/learning.png",
       "text":
         "Nazywam się Arkadiusz Zygan. W 2019 roku postanowiłem usystematyzować wiedzę z zakresu kodowania i programowania. Na przestrzeni lat interesowałem się nowymi technologiami, jednak nie uzyskałem pełnej wiedzy teoretycznej, jak i nie zrealizowałem praktycznych projektów. Od tamtego czasu systematycznie uczę się programowania po stronie front-endu z elementami back-endu."
     },
@@ -17,21 +17,21 @@
       "icon": "fab fa-youtube"
     },
     {
-      "img": "/static/media/infinitve.50d9c3d8.png",
+      "img": "./images/infinitve.png",
       "text":
         "'praktyka czyni mistrza' - każdy z nas to słyszał chociaż raz w swoim życiu. Zgadzam się, ale uważam, że trzeba dodać 'świadome ćwiczenie' - termin ten wykuł anders erics­son. Uważa on również, że aby osiągnąć wysoki poziom w dowolnej dziedzinie potrzeba nawet 10000 godzin. Zdaję sobię sprawę, że wciąż dużo pracy przede mną. Ćwiczę i rozwijam swoje umiejętności w javascript, react, html5 oraz css/sass. Wiem, że jestem na początku tej drogi, ale jestem zmotywowany, aby stawiać kolejne kroki."
     }
   ],
-  "contactDB": [
+  "contact": [
     {
       "class": "box1",
       "mainIcon": "fas fa-file-pdf",
       "title": "CURRICULUM VITAE",
-      "link":
+      "cvPl":
         "https://drive.google.com/file/d/1d2C9pub8Kvj9UCHmJDoG0_JCUtyKupmu/view",
-      "link2": "https://drive.google.com/open?id=1sixNne4mGrT94aVRdj6vGBRf9OMkvZHp",
-      "img1": "/static/media/pin_pl.c457f42c.png",
-      "img2": "/static/media/pin_uk.0af1eb3a.png",
+      "cvEng": "https://drive.google.com/open?id=1sixNne4mGrT94aVRdj6vGBRf9OMkvZHp",
+      "img1": "./images/pin_pl.png",
+      "img2": "./images/pin_uk.png",
       "classBtn": "cvBtn",
       "btnIcon": "fas fa-angle-double-up",
       "mobIcon": "fas fa-sign-in-alt"
@@ -61,7 +61,7 @@
       "mobIcon": "fas fa-sign-in-alt"
     }
   ],
-  "footerDB": [
+  "footer": [
     {
       "text1": "zygan",
       "text2": "arkadiusz",
@@ -107,7 +107,7 @@
       "step5": "Sukces"
     }
   ],
-  "navbarDB":[
+  "navbar":[
     {
       "logo": "ZYGAN AREK",
       "navLinks": [
@@ -130,10 +130,10 @@
       ]
     }
   ],
-  "portfolioDB": [
+  "portfolio": [
     {
       "name": "picture shop",
-      "img": "/static/media/Picture_shop.c7989b2d.png",
+      "img": "./images/Picture_shop.png",
       "code": "https://github.com/Zyar3k/picture_shop",
       "demo": "https://picture-shop.netlify.app/",
       "desc1":
@@ -144,7 +144,7 @@
     },
     {
       "name": "Betty Craft Designs",
-      "img": "/static/media/bcd.0273e508.png",
+      "img": "./images/bcd.png",
       "code": "https://github.com/Zyar3k/online_shop_bcd",
       "demo": "https://online-shop-bcd.herokuapp.com/",
       "desc1": "Indywidualny projekt na zakończenie Bootcampu Web Developer Plus",
@@ -155,7 +155,7 @@
     },
     {
       "name": "Cz@-App",
-      "img": "/static/media/czatap_port.778ddc9f.png",
+      "img": "./images/czatap_port.png",
       "code": "https://github.com/Zyar3k/your_chat_app/tree/master",
       "demo": "https://youthful-clarke-0b8301.netlify.app/",
       "desc1": "Aplikacja czatowa w czasie rzeczywistym",
@@ -166,7 +166,7 @@
     },
     {
       "name": "statystyki CovID-19",
-      "img": "/static/media/Covid-19 Counter.824c69f5.png",
+      "img": "./images/Covid-19 Counter.png",
       "code": "https://github.com/Zyar3k/covid-19_counter",
       "demo": "https://covid-19-counter.netlify.app/",
       "desc1":
@@ -177,7 +177,7 @@
     },
     {
       "name": "kamień - papier - nożyce",
-      "img": "/static/media/rps.3dda273a.png",
+      "img": "./images/rps.png",
       "code": "https://github.com/Zyar3k/rock-paper-scissors",
       "demo": "https://zyar3k.github.io/rock-paper-scissors/",
       "desc1": "Pierwsza gra napisana w JavaScript wyświetlająca wynik rozgrywki",
@@ -187,7 +187,7 @@
     },
     {
       "name": "numerologia",
-      "img": "/static/media/Numerologia.8552b7d2.png",
+      "img": "./images/Numerologia.png",
       "code": "https://github.com/Zyar3k/numerology_4.0.0",
       "demo": "https://numerologia.netlify.app/",
       "desc1":
@@ -199,7 +199,7 @@
 
     {
       "name": "Aplikacja pogodowa",
-      "img": "/static/media/local_weather.69a3fe0a.jpg",
+      "img": "./images/local_weather.jpg",
       "code": "https://github.com/Zyar3k/local_weather_app",
       "demo": "https://agitated-aryabhata-cef99e.netlify.app/",
       "desc1":
@@ -211,7 +211,7 @@
     },
     {
       "name": "panel administracyjny",
-      "img": "/static/media/panel_adm.70f98583.png",
+      "img": "./images/panel_adm.png",
       "code": "https://github.com/Zyar3k/Solo-project",
       "demo": "https://zyar3k.github.io/Solo-project/#",
       "desc1":
@@ -223,7 +223,7 @@
     },
     {
       "name": "Projekt grupowy",
-      "img": "/static/media/group_project.8bb51d45.png",
+      "img": "./images/group_project.png",
       "code": "https://github.com/Zyar3k/kodilla_group_project",
       "demo": "https://stupefied-lewin-977cb1.netlify.com/",
       "desc1":
@@ -235,7 +235,7 @@
     },
     {
       "name": "Do zrobienia!",
-      "img": "/static/media/toDoApp.44e348f3.png",
+      "img": "./images/toDoApp.png",
       "code": "https://github.com/Zyar3k/todo_react_app",
       "demo": "https://dozrobienia-app.netlify.app/",
       "desc1":
@@ -247,7 +247,7 @@
     },
     {
       "name": "New Wave festival",
-      "img": "/static/media/new_wave.3e094d60.png",
+      "img": "./images/new_wave.png",
       "code": "https://github.com/Zyar3k/newwavefestival-feb2020",
       "demo": "https://secure-woodland-63361.herokuapp.com/",
       "desc1":
@@ -258,7 +258,7 @@
       "icon1": "fas fa-play-circle"
     }
   ],
-  "skillsDB": [
+  "skills": [
     {
       "frontTitle": {
         "title": "Front-end"

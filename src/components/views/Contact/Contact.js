@@ -1,12 +1,11 @@
 import data from "../../../data/db.json";
 
-// import pl from "../../../images/pin_pl.png";
-// import uk from "../../../images/pin_uk.png";
-
 import "./Contact.scss";
 
 const Contact = () => {
-  const DB = data.contactDB;
+  const DB = data.contact;
+
+  console.log(DB[0]);
 
   const contactSections = DB.map((item, index) => (
     <section key={index} className='quarter'>
@@ -18,7 +17,7 @@ const Contact = () => {
         {item.img1 ? (
           <span>
             <a
-              href='https://drive.google.com/file/d/1d2C9pub8Kvj9UCHmJDoG0_JCUtyKupmu/view'
+              href={DB[0].cvPl}
               target='_blank'
               rel='noopener noreferrer'
               className='checkBtn cvBtn'
@@ -26,7 +25,7 @@ const Contact = () => {
               <img src={item.img1} alt='plFlag' />
             </a>
             <a
-              href='https://drive.google.com/open?id=1sixNne4mGrT94aVRdj6vGBRf9OMkvZHp'
+              href={DB[0].cvEng}
               target='_blank'
               rel='noopener noreferrer'
               className='checkBtn cvBtn'

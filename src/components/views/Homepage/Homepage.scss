@@ -33,10 +33,7 @@
     .centralWrapper {
       display: flex;
       height: 70%;
-      font-size: 90px;
-      // border: 20px solid $color2;
       letter-spacing: 4px;
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
       animation: slideFromBottom 3s;
@@ -75,10 +72,9 @@
       .start {
         height: 35%;
         margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        display: flex;
+        justify-content: center;
         font-size: 50px;
         text-transform: lowercase;
         color: $color2;
@@ -121,6 +117,85 @@
       align-items: center;
       font-style: italic;
       justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .homeContent {
+    justify-content: unset;
+  }
+
+  .introduction {
+    height: 100%;
+    width: 100%;
+    padding: 4px 14px;
+
+    .top {
+      justify-content: space-between;
+
+      .topWrapper,
+      .bottomWrapper {
+        font-size: 18px;
+        height: 8%;
+      }
+
+      .topWrapper {
+      }
+
+      .centralWrapper {
+        height: 84%;
+
+        .nameWrapper {
+          height: 80%;
+          flex-direction: column;
+
+          .name,
+          .lastName {
+            width: 100%;
+          }
+
+          .name {
+            font-size: 46px;
+            justify-content: center;
+            padding-right: 0;
+            padding-bottom: 30px;
+          }
+
+          .lastName {
+            justify-content: center;
+            font-size: 80px;
+            padding-left: 0;
+          }
+        }
+
+        .start {
+          height: 20%;
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 40px;
+        }
+      }
+
+      .bottomWrapper {
+        justify-content: center;
+        padding: 0;
+        font-size: unset;
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .bottom {
+      padding: 0;
+      font-size: 16px;
+
+      span {
+        font-size: 14px;
+        margin-top: 8px;
+        flex: 0;
+      }
     }
   }
 }

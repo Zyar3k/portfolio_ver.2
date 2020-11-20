@@ -6,7 +6,6 @@ import data from "../../../data/db.json";
 const Homepage = () => {
   const DB = data.home[0];
 
-  console.log(DB);
   return (
     <>
       <div className='viewContent homeContent'>

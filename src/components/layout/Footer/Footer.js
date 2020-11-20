@@ -5,7 +5,7 @@ import data from "../../../data/db.json";
 import "./Footer.scss";
 
 const Footer = () => {
-  const DB = data.footerDB[0];
+  const DB = data.footer[0];
 
   const socialElem = DB.social.map((item, index) => (
     <a href={item.link} key={index} target='_blank' rel='noopener noreferrer'>

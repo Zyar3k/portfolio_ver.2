@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-
 import data from "../../../data/db.json";
 
 import "./Navbar.scss";
 
 const Navbar = () => {
-  const DB = data.navbarDB[0];
+  const DB = data.navbar[0];
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -31,7 +28,7 @@ const Navbar = () => {
             <p>{DB.logo}</p>
           </NavLink>
           <div className='menuIcon' onClick={handleClick}>
-            <FontAwesomeIcon icon={click ? faTimes : faBars} />
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "navMenu active" : "navMenu"}>
             {navElements}
